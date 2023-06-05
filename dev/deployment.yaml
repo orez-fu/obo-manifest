@@ -15,10 +15,10 @@ spec:
         app: obo
     spec:
       containers:
-        - name: "obo-app"
-          image: obo:v0
-          ports:
-            - containerPort: 8080
-          env: 
-          - name: DATABASE_URL
-            value: "jdbc:mysql://10.0.2.15:3336/obo?useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
+      - name: obo-app
+        image: orezfu/obo:v1.9
+        ports:
+        - containerPort: 8080
+        env:
+        - name: DATABASE_URL
+          value: jdbc:mysql://10.0.2.15:3336/obo?useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
