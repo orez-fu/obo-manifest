@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: obo-app
-        image: orezfu/obo:v1.1
+        image: orezfu/obo:v1.2
         ports:
         - containerPort: 8080
         env:
